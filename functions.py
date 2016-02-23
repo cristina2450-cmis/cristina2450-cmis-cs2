@@ -3,7 +3,7 @@ import math
 def add(a, b):# takes two numbers and returns their sum
 	return a + b
 
-a = add(3, 4)
+a = int(add(3, 4))
 b = add(5, 6)
 
 def sub(a, b):# subtracts second number from first
@@ -24,7 +24,7 @@ def div(a, b):# divides first number by second
 g = div(9, 3)
 h = div(4, 2)
 
-def hours_from_second(seconds):# converts seconds to hours
+def hours_from_seconds(seconds):# converts seconds to hours
 	return seconds/3600
 
 i = hours_from_seconds(7200)
@@ -58,19 +58,18 @@ q = area(12, 14, 3)
 r = area(10, 5, 7)
 
 def right_align(word):# aligns word to the right
-    return (80 -len(word)*("   ") + word
+    return (80 -len(word))*(" ") + word
 
 s = right_align("hello")
 t = right_align("blah")
 
 def center(word):# aligns word to center
-    return (40 -len(word)*("   ") + word
+    return (40 -len(word))*(" ") + word
 
 u = center("python")
 v = center("functions")
 
 def msg_box(word):
-    return"+" + ((len(word)+4)*"-")+"+"+"\n"+"|"+(2*"")+(word)+(2*"")+"|"+"\n"+"+"+((len(word)+4)*"-")+"+"
+    return "+" + ((len(word)+4)*"-")+"+"+"\n"+"|"+(2*"")+(word)+(2*"")+"|"+"\n"+"+"+((len(word)+4)*"-")+"+"
 
-w = msg_box(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v)
-print w
+print msg_box("a")
