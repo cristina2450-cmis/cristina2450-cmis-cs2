@@ -45,8 +45,8 @@ n = sphere_volume(10)
 def avg_volume(a, b):# finds averge volume of two spheres
     ha = a/2
     hb = b/2
-    x = 4/3*math.pi*ha*ha*ha
-    y = 4/3*math.pi*hb*hb*hb
+    x = sphere_volume(ha)
+    y = sphere_volume(hb)
     return (x+y)/2
     
 
