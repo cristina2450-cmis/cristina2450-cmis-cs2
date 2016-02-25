@@ -45,10 +45,13 @@ n = sphere_volume(10)
 def avg_volume(a, b):# finds averge volume of two spheres
     ha = a/2
     hb = b/2
+    x = 4/3*math.pi*ha*ha*ha
+    y = 4/3*math.pi*hb*hb*hb
+    return (x+y)/2
     
 
-o = avg_volume (10, 20)
-p = avg_volume (5, 7)
+o = avg_volume(10, 20)
+p = avg_volume(5, 7)
 
 def area(a, b, c):# finds area of triangle when given 3 sides
 	p =(a + b + c)/2
