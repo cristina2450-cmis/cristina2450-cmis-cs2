@@ -67,23 +67,23 @@ def diameter_of_circles(a, b, c):
     print db
     print dc
     print total
-#1pt for header line
-#1pt for parameter names
-#1pt for return value
-#1pt for correct output format
-#3pt for correct use of format function
+#1pt for header line - (0pts)
+#1pt for parameter names - (1pt)
+#1pt for return value - (0pts)
+#1pt for correct output format - (0pts)
+#3pt for correct use of format function - (0pts)
 
-#1pt header line
-#1pt getting input
-#1pt converting input
-#1pt for calling output function
-#2pt for correct diameter formula
-#1pt for variable names
+#1pt header line - (0pts)
+#1pt getting input - (1pt)
+#1pt converting input - (1pt)
+#1pt for calling output function - (0pts)
+#2pt for correct diameter formula - (0pts)
+#1pt for variable names - (1pt)
 
-#1pt for calling main
+#1pt for calling main - (0pts)
 
-#1pt explanatory comments
-#1pt code format
+#1pt explanatory comments - (0pts)
+#1pt code format - (0pts)
 
 p = diameter_of_circles(1, 2, 3)
 
