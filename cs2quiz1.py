@@ -1,4 +1,4 @@
-#Part 1: Terminology (15 points) (teminology - 12/15) (programming - 7/25)
+#Part 1: Terminology (15 points) (teminology - 12/15) (programming - 8/25)
 #1 1pt) What is the symbol "=" used for? - (1pt)
 # It is used to assign a value to a variable.
 #
@@ -81,9 +81,9 @@ def diameter_of_circles(a, b, c):
 #1pt for variable names - (1pt)
 
 #1pt for calling main - (0pts)
-
+#1pt script runs - (1pt) 
 #1pt explanatory comments - (0pts)
 #1pt code format - (0pts)
-
+# Although the program runs, the execution was wrong. The formula was correct but it wasn't well organised as it was one long function instead of three shorter easier to read functions. The program also returned the four values asked for but they were incorrect.
 p = diameter_of_circles(1, 2, 3)
 
