@@ -1,4 +1,4 @@
-#Part 1: Terminology (15 points)
+#Part 1: Terminology (15 points) (teminology - 12/15) (programming - 7/25)
 #1 1pt) What is the symbol "=" used for? - (1pt)
 # It is used to assign a value to a variable.
 #
@@ -49,8 +49,8 @@ import math
 
 #1 pt for header line - (1pt)
 #3 pt for correct formula - (1pts)
-#1 pt for return value - (0pts)
-#1 pt for parameter name - (0pts)
+#1 pt for return value - (0pts return was not used)
+#1 pt for parameter name - (0pts parameters name are not descriptive)
 #1 pt for function name - (1pt)
 def diameter_of_circles(a, b, c):
     a = raw_input("area of circle 1 >>> ")
