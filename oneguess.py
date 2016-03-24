@@ -23,13 +23,13 @@ def main():
         print "That's right!"
 
     if int(guess) < actual_number:
-        print "The target was", actual_number
-        print "Your guess was", guess
-        print "That's under by", subtraction_number
+        print "The target was", actual_number, "."
+        print "Your guess was", guess, "."
+        print "That's under by", subtraction_number, "."
 
     if int(guess) > actual_number:
-        print "The target was", actual_number
-        print "Your guess was", guess
-        print "That's over by", subtraction_number
+        print "The target was", actual_number, "."
+        print "Your guess was", guess, "."
+        print "That's over by", subtraction_number, "."
 
 main()
