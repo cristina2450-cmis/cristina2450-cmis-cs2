@@ -18,27 +18,6 @@
 
 print "You're walking down the street."
 
-def cafe():
-
-    print "There's a cafe! Would you like to enter?"
-    cafe_answer = raw_input('Yes, No, Maybe?\n')
-    
-    if cafe_answer == "Yes":
-        print "You're in."
-    elif cafe_answer == "No":
-        print "Ok, then. We'll keep walking."
-    else:
-        print "Let's go in anyway."
-
-cafe()
-
-def change():
-    price_of_juice = 3
-    price_of_sandwich = 5
-    price_of_coffee = 2
-    print "What would you like to order?\n"
-    order = raw_input("Juice, Coffee or Sandwich? \n"
-
 def street_corner():
 
     print "We've come to the corner. Would you like to go left or right?"
@@ -49,4 +28,42 @@ def street_corner():
     if sc_answer == "Right":
         print "Oh, no!"
 
-street_corner()
+def change():
+
+    price_of_juice = 3
+    price_of_sandwich = 5
+    price_of_coffee = 2
+    print "What would you like to order?"
+    order = raw_input('Juice for $3, Coffee for $2 or a Sandwich for $5? \n')
+    amount_given = raw_input('How much money do you give?\n')
+    if order == "Juice":
+        amount_of_change = int(amount_given) - price_of_juice
+    elif order == "Coffee":
+        amount_of_change = int(amount_given) - price_of_coffee
+    else:
+        amount_of_change = int(amount_given) - price_of_sandwich
+
+    output = """Your change is {}.
+Here you go.
+Come again!
+""".format(amount_of_change)
+    print output
+
+
+def cafe():
+
+    print "There's a cafe! Would you like to enter?"
+    cafe_answer = raw_input('Yes, No, Maybe?\n')
+    
+    if cafe_answer == "Yes":
+        print "You're in."
+        change()
+    elif cafe_answer == "No":
+        print "Ok, then. We'll keep walking."
+        street_corner()
+    else:
+        print "Let's go in anyway."
+        change()
+
+cafe()
+
