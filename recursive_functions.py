@@ -22,4 +22,27 @@ def secondmain():
     countupfrom(-10, 10)
     return
 
-secondmain()
+
+
+def countdownfrom(start, stop):
+    if start >= stop:
+        print start
+        countdownfrom(start - 1, stop)
+    else:
+        print "done"
+
+def thirdmain():
+    countdownfrom(12, 1)
+    return
+
+
+
+def adder(number):
+    running_total = 0
+    if raw_input("next number: ") == "":
+        print running_total
+    else:
+        print running_total
+        adder(int(running_total) + int(raw_input("next number: ")))
+
+adder(raw_input("number: "))
