@@ -39,10 +39,10 @@ def thirdmain():
 
 def adder(number):
     running_total = 0
-    if raw_input("next number: ") == "":
+    if raw_input("number: ") == "":
         print running_total
     else:
         print running_total
-        adder(int(running_total) + int(raw_input("next number: ")))
+        adder(int(running_total) + int(raw_input("number: ")))
 
 adder(raw_input("number: "))
