@@ -37,12 +37,13 @@ def thirdmain():
 
 
 
-def adder(number):
-    running_total = 0
+def adder(number, total):
+    running_total = number + total
     if raw_input("number: ") == "":
         print running_total
     else:
+	running_total = number + total
         print running_total
         adder(int(running_total) + int(raw_input("number: ")))
 
-adder(raw_input("number: "))
+adder(int(raw_input("number: ")), 0)
