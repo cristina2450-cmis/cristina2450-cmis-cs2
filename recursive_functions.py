@@ -35,15 +35,18 @@ def thirdmain():
     countdownfrom(12, 1)
     return
 
+firstnumber = int(raw_input("number 4: "))
+number = int(raw_input("number 3: "))
 
+def adder(firstnumber, number):
 
-def adder(number, total):
-    running_total = number + total
-    if raw_input("number: ") == "":
-        print running_total
+    running_total = firstnumber + number
+
+    if firstnumber == "" or number == "":
+        return
     else:
-	running_total = number + total
         print running_total
-        adder(int(running_total) + int(raw_input("number: ")))
+        adder(int(raw_input("number 1: ")), int(raw_input("number 2: ")))
 
-adder(int(raw_input("number: ")), 0)
+
+adder(firstnumber, number)
