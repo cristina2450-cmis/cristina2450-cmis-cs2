@@ -35,8 +35,7 @@ def thirdmain():
     countdownfrom(12, 1)
     return
 
-firstnumber = int(raw_input("number 4: "))
-number = int(raw_input("number 3: "))
+
 
 def adder(firstnumber, number):
 
@@ -49,4 +48,11 @@ def adder(firstnumber, number):
         adder(int(raw_input("number 1: ")), int(raw_input("number 2: ")))
 
 
-adder(firstnumber, number)
+
+def power(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * power(x, n-1)
+
+print power(3, 0)
