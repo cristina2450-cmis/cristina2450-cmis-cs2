@@ -29,6 +29,7 @@ def whole_game():
 
 def main():
 
+    print "this is a guessing game. pick an integer from 1 to 100."
     whole_game()
     whole_game()
     whole_game()
